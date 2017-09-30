@@ -15,7 +15,7 @@
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=mikhail.papkov@gmail.com
 
-#SBATCH --mem=50G
+#SBATCH --mem=150G
 
 #Leave this here if you need a GPU for your job
 #SBATCH --partition=gpu
@@ -26,5 +26,5 @@
 module load python-2.7.13
 
 cd ../OpenNMT-py/
-python train.py -data ../data/rdy -save_model ../model/demo-model –gpuid 0
+python train.py -data ../data/rdy -save_model ../model/eten_model -gpuid 0
 

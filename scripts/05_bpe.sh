@@ -9,15 +9,18 @@
 #The job requires 1 task per node
 #SBATCH --ntasks-per-node=1
 
-#The maximum walltime of the job is a 12 hours
-#SBATCH -t 12:00:00
+#The maximum walltime of the job is a 24 hours
+#SBATCH -t 24:00:00
 
-#SBATCH --mem=15G
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=mikhail.papkov@gmail.com
+
+#SBATCH --mem=25G
 
 
 echo "Learn BPE"
 
-cat cleaned-tc-tok-train.et cleaned-tc-tok-train.en | ../OpenNMT-py/tools/subword-nmt/learn_bpe.py -s 10000 > eten.bpe
+cat cleaned-tc-tok-train.et cleaned-tc-tok-train.en | ../OpenNMT-py/tools/subword-nmt/learn_bpe.py -s 50000 > eten.bpe
 
 for lang in et en
 do

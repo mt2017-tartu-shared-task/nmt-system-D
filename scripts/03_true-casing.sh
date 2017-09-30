@@ -12,7 +12,7 @@
 #The maximum walltime of the job is a 12 h
 #SBATCH -t 12:00:00
 
-#SBATCH --mem=10G
+#SBATCH --mem=25G
 
 echo "Train true-casing models:"
 echo "English"

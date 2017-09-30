@@ -14,13 +14,17 @@
 
 #SBATCH --mem=50G
 
-# tab-join and shuffle et and en corpora
-paste ./data/all.{et,en} | shuf > ./data/mixed-data.both
+echo "Concatenate all corpora"
+cat raw/*.en > demo-all.en
+cat raw/*.et > demo-all.et
 
-# split corpus
-sed -n 1,2000000p ./data/mixed-data.both | cut -f 1 > ./data/test.et
-sed -n 1,2000000p ./data/mixed-data.both | cut -f 2 > ./data/test.en
-sed -n 2000001,3000000p ./data/mixed-data.both | cut -f 1 > ./data/dev.et
-sed -n 2000001,3000000p ./data/mixed-data.both | cut -f 2 > ./data/dev.en
-sed -n 3000001,19051439p ./data/mixed-data.both | cut -f 1 > ./data/train.et
-sed -n 3000001,19051439p ./data/mixed-data.both | cut -f 2 > ./data/train.en
+echo "Tab-join and shuffle et and en corpora"
+paste all.{et,en} | shuf > mixed-data.both
+
+echo "Split corpus"
+sed -n 1,2000000p mixed-data.both | cut -f 1 > test.et
+sed -n 1,2000000p mixed-data.both | cut -f 2 > test.en
+sed -n 2000001,3000000p mixed-data.both | cut -f 1 > dev.et
+sed -n 2000001,3000000p mixed-data.both | cut -f 2 > dev.en
+sed -n 3000001,19051439p mixed-data.both | cut -f 1 > train.et
+sed -n 3000001,19051439p mixed-data.both | cut -f 2 > train.en
