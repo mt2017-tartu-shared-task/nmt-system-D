@@ -15,8 +15,8 @@
 #SBATCH --mem=50G
 
 echo "Concatenate all corpora"
-cat raw/*.en > demo-all.en
-cat raw/*.et > demo-all.et
+cat raw/*.en > all.en
+cat raw/*.et > all.et
 
 echo "Tab-join and shuffle et and en corpora"
 paste all.{et,en} | shuf > mixed-data.both
