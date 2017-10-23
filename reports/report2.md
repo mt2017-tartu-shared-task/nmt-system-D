@@ -1,13 +1,43 @@
 # Translation quality report. Lab 3.
 
-### BLEU
+## BLEU
 BLEU was computed with de-preprocessed files
+
 1. accurate dev-set (total 1000): **22.61**
 2. our test-set (first 50000): **28.30**
-2. our dev-set (first 20000): **37.00**
+3. our dev-set (first 20000): **37.00**
+
+Accurate dev-set is relatively short and covers specialized topics which system hasn't seen during training.
+
+## Attention analysis
+
+Below are sorted metrics for selected sentences. Confidence, CDP, APout and APin respectively. 
+We can see that they are quite high despite selection by relatively low BLEU score.
+APout is 100% ewerywhere, and it is not completely clear why.
+
+![metrics1](./report2/metrics1)
+
+### Worst confidence:
+
+![metrics2](./report2/metrics2)
+
+Attentions are scattered over many output tokens. For example "naised" wasn't translated into anything relevant ("women").
 
 
-### Summary
+### Best confidence:
+
+![metrics3](./report2/metrics3)
+
+Main problem with this sentence is repetitive words in English. Attentions of the first part are quite straightforward.
+
+
+### Strange confidence:
+
+![metrics4](./report2/metrics4)
+
+It is strange that metrics have not penalized half-translated sentence.
+
+## Summary
 1. The model tends to use future simple and present continuous where present simple should be used. 
 This is probably because of the absence of future grammatical tense in Estonian.
 2. Parts of compound words often are not translated at all. This can be a BPE or vocabulary problem.
@@ -15,15 +45,15 @@ This is probably because of the absence of future grammatical tense in Estonian.
 4. The character of word dependencies is often wrong but many sentences themselves have complex structure.
 5. Rephrasing is frequent and usually correct.  
 
+## Sentence reports
 
-### Report template
+### *Report template*
 
-1. ID
-2. source
-3. target
-4. translation
-5. errors
-
+1. *ID*
+2. *source*
+3. *target*
+4. *translation*
+5. *errors*
 
 ### 1
 
@@ -249,7 +279,7 @@ Article missing. Rephrasing.
 
 ### 25
 
-1. ID 190
+1. ID 193
 2. EL kaitseb tarbijaid vigaste ja ebakvaliteetsete toodete eest olenemata sellest, kas kaupu ostetakse kodukohast või teisest riigist.
 3. As consumers , EU rules protect you from faulty or substandard products whether you buy locally or in another country .
 4. The EU protects consumers against defective and unquality products , whether goods are purchased from home or from another country .
