@@ -4,7 +4,7 @@
 BLEU was computed with de-preprocessed files
 1. accurate dev-set (total 1000): **22.61**
 2. our test-set (first 50000): **28.30**
-
+2. our dev-set (first 20000): **37.00**
 
 
 ### Summary
