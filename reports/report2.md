@@ -15,25 +15,25 @@ Below are sorted metrics for selected sentences. Confidence, CDP, APout and APin
 We can see that they are quite high despite selection by relatively low BLEU score.
 APout is 100% ewerywhere, and it is not completely clear why.
 
-![metrics1](./report2/metrics1)
+![metrics1](https://raw.githubusercontent.com/mt2017-tartu-shared-task/nmt-system-D/master/reports/report2/metrics1.png)
 
 ### Worst confidence:
 
-![metrics2](./report2/metrics2)
+![metrics2](https://raw.githubusercontent.com/mt2017-tartu-shared-task/nmt-system-D/master/reports/report2/metrics2_worst.png)
 
 Attentions are scattered over many output tokens. For example "naised" wasn't translated into anything relevant ("women").
 
 
 ### Best confidence:
 
-![metrics3](./report2/metrics3)
+![metrics3](https://raw.githubusercontent.com/mt2017-tartu-shared-task/nmt-system-D/master/reports/report2/metrics3_best.png)
 
 Main problem with this sentence is repetitive words in English. Attentions of the first part are quite straightforward.
 
 
 ### Strange confidence:
 
-![metrics4](./report2/metrics4)
+![metrics4](https://raw.githubusercontent.com/mt2017-tartu-shared-task/nmt-system-D/master/reports/report2/metrics4_strange.png)
 
 It is strange that metrics have not penalized half-translated sentence.
 
