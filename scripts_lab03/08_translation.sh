@@ -15,7 +15,7 @@
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=mikhail.papkov@gmail.com
 
-#SBATCH --mem=100G
+#SBATCH --mem=50G
 
 #Leave this here if you need a GPU for your job
 #SBATCH --partition=gpu
@@ -25,6 +25,6 @@
 #The module with all the NMT / deep learning packages
 module load python-2.7.13
 
-cd ../../../materials/lab3/OpenNMT-py/
-python translate.py -model ../../../nmt-system-D/model/eten_model_acc_70.76_ppl_4.15_e13.pt -src ../../../nmt-system-D/data/lab03/bpe.tc-tok-dev.et -output ../../../nmt-system-D/data/lab03/bpe.tc-tok-hyps.en -attn_debug -gpu 0
+cd ../../materials/lab3/OpenNMT-py/
+python translate.py -model ../../../nmt-system-D/model/eten_model_acc_70.41_ppl_4.24_e13.pt -src ../../../nmt-system-D/data_accurat/bpe.cleaned-tc-tok-dev.et -output ../../../nmt-system-D/data_accurat/bpe.tc-tok-hyps_13.en -attn_debug -gpu 0
 

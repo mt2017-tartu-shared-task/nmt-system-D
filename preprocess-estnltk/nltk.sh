@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #The name of the job is test_job
-#SBATCH -J imperium5_job
+#SBATCH -J imperium_nltk_job
 
 #The job requires 1 compute node
 #SBATCH -N 1
@@ -15,8 +15,10 @@
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=mikhail.papkov@gmail.com
 
-#SBATCH --mem=25G
+#SBATCH --mem=50G
 
+#The module with all the NMT / deep learning package
+module load python-3.6.0
+# Use local virtualenv with nltk
+source activate nltkenv
 
-echo "Apply to dev"
-../OpenNMT-py/tools/subword-nmt/apply_bpe.py -c ../data/eten.bpe < cleaned-tc-tok-dev-rsp.et > bpe.cleaned-tc-tok-dev.et

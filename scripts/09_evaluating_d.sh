@@ -14,4 +14,4 @@
 
 #SBATCH --mem=50G
 
-perl ../ONMT/OpenNMT-py/tools/multi-bleu.perl test_small.en < hyps_small_d.en
+perl ../ONMT/OpenNMT-py/tools/multi-bleu.perl clean_dev.en < clean-hyps_dev.en

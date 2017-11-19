@@ -15,4 +15,6 @@
 #SBATCH --mem=25G
 
 echo "Do true-casing"
-../../../materials/lab3/OpenNMT-py/tools/truecase.perl --model ../et-truecase.mdl < tok-dev.et > tc-tok-dev.et
+#../../materials/lab3/OpenNMT-py/tools/truecase.perl --model ../data/et-truecase.mdl < tok-dev.et > tc-tok-dev.et
+../../materials/lab3/OpenNMT-py/tools/truecase.perl --model ../data/en-truecase.mdl < tok-dev.en > tc-tok-dev.en
+

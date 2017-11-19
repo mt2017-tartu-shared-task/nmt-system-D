@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #The name of the job is test_job
-#SBATCH -J imperium9_job
+#SBATCH -J imperium2_job
 
 #The job requires 1 compute node
 #SBATCH -N 1
@@ -14,4 +14,8 @@
 
 #SBATCH --mem=50G
 
-perl ../ONMT/OpenNMT-py/tools/multi-bleu.perl clean_test.en < hyps.en
+
+for f in {test,dev,train}.{en,et}
+do
+  ../OpenNMT-py/tools/tokenizer.perl < ssp_$f > tok-$f
+done

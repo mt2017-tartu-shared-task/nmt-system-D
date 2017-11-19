@@ -1,3 +1,5 @@
 /data/*
+/data_accurat/*
+/data_baseline/*
 /model/*.pt
 

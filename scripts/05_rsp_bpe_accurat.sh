@@ -18,5 +18,9 @@
 #SBATCH --mem=25G
 
 
-echo "Apply to dev"
-../OpenNMT-py/tools/subword-nmt/apply_bpe.py -c ../data/eten.bpe < cleaned-tc-tok-dev-rsp.et > bpe.cleaned-tc-tok-dev.et
+
+        echo "Apply to test"
+        ../OpenNMT-py/tools/subword-nmt/apply_bpe.py -c ../data/eten.bpe < cleaned-tc-tok-dev-rsp.et > bpe.tc-tok-test.et
+        ../OpenNMT-py/tools/subword-nmt/apply_bpe.py -c ../data/eten.bpe < cleaned-tc-tok-dev.en > bpe.tc-tok-test.en
+
+echo "End"

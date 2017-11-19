@@ -26,5 +26,5 @@
 module load python-2.7.13
 
 cd ../ONMT/OpenNMT-py/
-python translate.py -model ../../model/eten_model_acc_70.39_ppl_4.25_e10.pt -src ../../data/bpe.tc-tok-test.et -output ../../data/hyps.en -gpu 0
+python translate.py -model ../../model/eten_model_acc_70.39_ppl_4.25_e10.pt -src ../../data/bpe.cleaned-tc-tok-dev.et -output ../../data/hyps_dev.en -gpu 0
 

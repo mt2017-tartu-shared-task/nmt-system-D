@@ -17,6 +17,10 @@
 
 #SBATCH --mem=25G
 
+echo "Estonian"
 
-echo "Apply to dev"
-../OpenNMT-py/tools/subword-nmt/apply_bpe.py -c ../data/eten.bpe < cleaned-tc-tok-dev-rsp.et > bpe.cleaned-tc-tok-dev.et
+        echo "Apply to test"
+        ../OpenNMT-py/tools/subword-nmt/apply_bpe.py -c eten.bpe < cleaned-tc-tok-test-rsp.et > bpe.tc-tok-test.et
+
+
+echo "End"
