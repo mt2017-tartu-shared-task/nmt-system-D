@@ -104,6 +104,12 @@ Neutral effect of out changes. No improvement. No new mistakes. BLEU increased.
 5. Source sentence is two sentences in fact: splitting is bad. Second sentence is missing.
 "kohustuste" is translated twice as "obligations" and "duties". Second part of translation makes little sense. There are mistakes in word choice and forms.
 
+4.1. 
+ID 56: ( 4 ) System operators do not have the right to disclose commercial information which has been notified to them in the performance of their duties .
+ID 57: Traders in energy supply define the content of business and confidential information by coordinating the regulator .
+5.1. Sentence was split. Now it is translated fully. No improvement on the first part, second was translated almost correctly.
+
+Positive effect of our changes. No new mistakes. BLEU increased.
 
 ### 7
 
@@ -114,6 +120,10 @@ Neutral effect of out changes. No improvement. No new mistakes. BLEU increased.
 5. Casing mistake in "programme", "Latvia" is completely missing, "Lisbon strategy" translated twice. "Features of actions" instead of "lines of actions.
 "meetmete" and "tegevuste" both translated as "actions", "but" instead of "as well as".
 
+4.1. ID 68: The programme reflects the most important challenges facing Latvia in achieving the objectives of the Lisbon Strategy and identifies the main features of actions and actions to tackle these challenges , as well as indicators for achieving these objectives .
+5.1. Latvia emerged! "As well" is better than "but".
+
+It can be effect of our changes, but we are not sure. Overall improvement. No new mistakes. BLEU increased.
 
 ### 8
 
@@ -124,6 +134,10 @@ Neutral effect of out changes. No improvement. No new mistakes. BLEU increased.
 5. "Consultation" is singular and with article. "By" instead of "with". "the" is missing before "Latvian parliament" and redundant before "social partners".
 Interesting mistake "Sejm" (correct, but initially is not translated) 
 
+4.1. ID 71: The consultation was held with the Sejm ( Latvian Parliament ) and the social partners .
+5.1. "With" instead of "by" is better. 
+
+No improvement related to our changes. No new mistakes. BLEU increased.
 
 ### 9
 
@@ -134,6 +148,10 @@ Interesting mistake "Sejm" (correct, but initially is not translated)
 5. Debt is measured in tonnes (emerged from nowhere), "puclic" instead of "central government", "amounted" rephrased as "reached". 
 Abbreviation GDP is correct.
 
+4.1. ID 78: 	On 31 December 2004 , public debt amounted to 975 million latin or 13,3% of GDP 
+5.1. "latin" is clearly wrong (but better than "tonnes").
+
+No improvement related to our changes. No new mistakes. BLEU increased.
 
 ### 10
 
@@ -142,6 +160,11 @@ Abbreviation GDP is correct.
 3. However , it has to be noted that the population ageing creates new challenges for the health- care system .
 4. It should be noted , however , that an ageing population will test the health system in a new way .
 5. Sentence is completely rephrased but correct. Only translation of compound word "tervishoiusüsteemi" lacks "care" part.
+
+4.1. It should be noted , however , that the ageing population will test the health system in a new way .
+5.1. "care" is still absent. Translation is approximately the same.
+
+No improvement. No new mistakes. BLEU increased.
 
 
 ### 11
@@ -153,6 +176,11 @@ Abbreviation GDP is correct.
 5. "But" instead of "as well". "Coordination" is missing. Preposition "on" instead of "at". 
 Article missing. Rephrasing.
 
+4.1. ID 110: Latvia must determine the deadline for transposition of the internal market rules , but also ensure that the supervisory directives are coordinated at national level .
+5.1. "political" part is missing.
+
+Nothing related to out changes. PArt of sentence is missing. BLEU decreased.
+
 
 ### 12
 
@@ -162,6 +190,10 @@ Article missing. Rephrasing.
 4. As far as the current transposition of EU legislation is concerned , an effective database which would provide the opportunity to monitor the transposition process within a number of reference points , as well as in addition to other circumstances , is slowing down the transposition process and creating an EU internal market .
 5. Very long and complicated sentence. Missing words, problems with word dependencies.
 
+4.1. ID 114: At present , there is no effective comprehensive database for monitoring transposition of EU legislation , providing the possibility of monitoring the transposition process of directives over a number of time limits , and , in addition to other circumstances , the transposition process of directives is slowing down and the establishment of the EU internal market standards is impeded .
+5.1. New translation seems better, but it is not clear why. 
+
+Some words changed to better ones. BLEU increased.
 
 ### 13
 
@@ -171,6 +203,10 @@ Article missing. Rephrasing.
 4. As of 1 July 2004 , a qualified free consumer status threshold was set at 0,0 GWh .
 5. "Eligible" is missing, "the threshold for eligibility of a legal entity" part is also missing (no attention).
 
+4.1. ID 122: As at 1 July 2004 , a qualified consumer status threshold for legal persons was set at 0,0 GWh .
+5.1. "Legal persons" emegred, but it is not clear, why.
+
+Some improvements. No new mistakes. BLEU increased.
 
 ### 14
 
@@ -180,6 +216,12 @@ Article missing. Rephrasing.
 4. This part of our website will find information on how Parliament will organise its work through a system of different committees .
 5. Word dependency is wrong. Second sentence is missing. Article is missing. Wrong tense "will organise". "Different" instead of "specialized"
 
+4.1.
+ID 132: This part of our website will find information on how Parliament will organise its work through different committees .
+ID 133: The work of the European Parliament is therefore important because decisions on new European laws do jointly with Parliament and the Council of Ministers , which represents the Member States .
+5.1. Sentence was split. "System" is missing. Second part translated almost perfectly (BLEU 54)
+
+Successful split. Otherwise everything is fine. BLEU increased.
 
 ### 15
 
@@ -189,6 +231,10 @@ Article missing. Rephrasing.
 4. It is a little more than a third of Parliament's members .
 5. "At present" and "women" are missing. "EP" abbreviation is "parliament" without "e[uropean]". "It is" is redundant.
 
+4.1. ID 144: Today , a slightly more than one third of MEPs are women .
+5.1. "Women" emerged which is good. Abberviation remained.
+
+Sentence became significantly better (BLEU 48), but it is not clear why. BLEU increased.
 
 ### 16
 
@@ -198,6 +244,10 @@ Article missing. Rephrasing.
 4. Since the power of Members of the European Parliament is increasing , they will have an impact on all citizens' everyday lives : Environment , consumer protection , transport and education , culture , health , etc .
 5. Wrong tense "will have an impact" instead of "influence". Wrong casing in "environment". Article is missing.
 
+4.1. ID 151: Since the power of Members of the European Parliament is increasing , they influence all the areas of everyday life of their citizens : The environment , consumer protection , transport and also education , culture , health , etc .
+5.1. Tense changed to present which is good, "influence" as in the human translation instead of "impact"
+
+No improvement related to our changes. BLEU increased.
 
 ### 17
 
@@ -207,6 +257,10 @@ Article missing. Rephrasing.
 4. Furthermore , the provisions of the Treaty allow every European citizen to monitor the work of the Parliament , ask questions and receive answers in its language .
 5. Rephrasing everywhere. "Its" instead of "their own".
 
+4.1. ID 162: 	Furthermore , the provisions of the Treaty allow every European citizen to monitor Parliament's work , ask questions and receive answers in its language .
+5.1. Translation is a bit more similar to the human one. Otherwise the same.
+
+No improvement. No new mistakes. BLEU increased.
 
 ### 18
 
@@ -216,6 +270,8 @@ Article missing. Rephrasing.
 4. Six founding countries are Belgium , the Netherlands , Italy , Luxembourg , France and Germany .
 5. Human translation shuffled countries. Otherwise everything is OK.
 
+4.1. Six founding countries are Belgium , the Netherlands , Italy , Luxembourg , France and Germany .
+5.1. ID 172: Nothing changed.
 
 ### 19
 
@@ -224,6 +280,11 @@ Article missing. Rephrasing.
 3. The 1960s sees the emergence of ‘youth culture’ , with groups such as The Beatles attracting huge crowds of teenage fans wherever they appear , helping to stimulate a cultural revolution and widening the generation gap .
 4. In the 1960s , & quot ; youth culture & quot ; is emerging , the Beatles and other bands attract enormous teenagers everywhere , encouraging the cultural revolution and the widening gap between generations .
 5. "Crowds" and "wherever they appear" are absent. Rephrasing.
+
+4.1. In the 1960s , & quot ; youth culture & quot ; , the Beatles and other bands attract huge teenagers everywhere , encouraging the revolution of cultural revolution and widening the gap between generations .
+5.1. "Revolution" doubled, which is bad.
+
+No improvement. Doubling mistake. BLEU increased.
 
 
 ### 20
@@ -235,7 +296,12 @@ Article missing. Rephrasing.
 5. Wrong tense "are falling". "Portugal" is missing. Word dependencies between first and second part of the sentence are incorrect.
 "In the area" is wrong by meaning.
 
-### 21
+4.1. ID 182: The last European right-wing dictatorships , if in 1974 , the Salazar regime will fall in Portugal , and in 1975 , General Franco dies in Spain .
+5.1. Structure of sentence is worse. Future tense.
+
+No improvement. Some new mistakes (not related to our changes). BLEU increased.
+
+### 21 [!]
 
 1. ID 172
 2. Euroopa Parlamendi mõju EL asjaajamises suureneb ning 1979. aastal saavad kodanikud esmakordselt parlamendi liikmeid otse valida.
@@ -243,6 +309,10 @@ Article missing. Rephrasing.
 4. The European Parliament's influence in the EU's business is increasing , and citizens will be able to choose directly from Parliament in 1979 .
 5. "Is increasing" and "will be" wrong tense. "For the first time" ("esmakordselt") is missing.
 
+4.1. The European Parliament's impact on EU affairs will increase and citizens will be able to choose directly from Parliament for the first time in 1979 .
+5.1. "For the first time" emerged (because of root-splitting "esmakordselt" "kordselt" part received more attention)
+
+Improvements related to our changes. No new mistakes. BLEU increased.
 
 ### 22
 
@@ -252,6 +322,10 @@ Article missing. Rephrasing.
 4. The collapse of Communism throughout Central and Eastern Europe strengthens the neighbourhoods of Europeans .
 5. Casing problems. "Neibourhoods" is used with the wrong meaning.
 
+4.1. The collapse of Communism across Central and Eastern Europe strengthens the neighbourhood of Europeans .
+5.1. Almost nothing changed. "Across" was the right word.
+
+No improvement. No new mistakes. BLEU increased.
 
 ### 23
 
@@ -261,8 +335,10 @@ Article missing. Rephrasing.
 4. Citizens are increasingly concerned about protecting the environment , while looking for new opportunities for European security and defence .
 5. Human translation misses "increasingly" ("üha"). MT is rephrased but otherwise absolutely correct.
 
+4.1. Citizens are increasingly concerned about protecting the environment , while looking for new opportunities for European security and defence .
+5.1. Nothing changed.
 
-### 24
+### 24 [!]
 
 1. ID 190
 2. Riikidevaheline reisimine on lihtsam, kuna enam pole rahavahetuse kulu ja vaeva.
@@ -270,6 +346,10 @@ Article missing. Rephrasing.
 4. Transnational travel is easier , since the cost of money is no longer the cost and the effort .
 5. Idea of european countries is missing. Second part is wrong because of compound word "rahavahetuse" ("changing money").
 
+4.1. Transnational travel is easier because there is no money for money exchange and trouble .
+5.1. "Exchange" emerged (because of splitting "raha_vahetuse")
+
+Improvements related to our changes. No new mistakes. BLEU increased.
 
 ### 25
 
