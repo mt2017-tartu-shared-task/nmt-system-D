@@ -15,15 +15,16 @@ accurate dev-set (total 1000): **22.54 (22.61 before)**
 5. errors
 
 4.1. new translation
+
 5.1. new errors
 
 
 ## Changes
 
 1. There were cases when there were two sentences in the same line. The system saw the EOS and did not translate the second part at all. 
-We used more sofisticated regular expression to split those lines. This change did not affect the learning, so we decided that it was not necessary to retrain NMT system.
+[We used](https://github.com/mt2017-tartu-shared-task/nmt-system-D/blob/master/preprocess-estnltk/split_sentences.py "sentence split script") a more sofisticated regular expression to split those lines. This change did not affect the learning, so we decided that it was not necessary to retrain NMT system.
 
-2. Parts of compound words sometimes were not translated. We used **estnltk** to split compound words longer than 9 letters by adding spaces between their parts.
+2. Parts of compound words sometimes were not translated. [We used **estnltk**](https://github.com/mt2017-tartu-shared-task/nmt-system-D/blob/master/preprocess-estnltk/split_compounds.py "compounds split script") to split compound words longer than 9 letters by adding spaces between their parts.
 In many cases which we reviewed it had a positive effect. This change can possibly affect vocabulary and BPE setup (?).
 
 
@@ -94,6 +95,8 @@ Positive influence by our changes. Some improvement. Some new mistakes. BLEU dec
 
 Improvements related to our changes. No new mistakes. BLEU increased.
 
+![](https://raw.githubusercontent.com/mt2017-tartu-shared-task/nmt-system-D/master/reports/report4/forthefirsttime.png)
+
 
 ### 24 [!]
 
@@ -107,6 +110,8 @@ Improvements related to our changes. No new mistakes. BLEU increased.
 5.1. "Exchange" emerged (because of splitting "raha_vahetuse")
 
 Improvements related to our changes. No new mistakes. BLEU increased.
+
+![](https://raw.githubusercontent.com/mt2017-tartu-shared-task/nmt-system-D/master/reports/report4/rahavahetuse.png)
 
 
 ### 26 [!]
@@ -163,6 +168,8 @@ Some improvements. No new mistakes. BLEU increased.
 5.1. "riskihaldusstrateegiatega" split - "risk management strategies" emerged. "business continuity" emerged. Now sentence seems to be translated correctly.
 
 Improvements related to our changes. No new mistakes. BLEU increased.
+
+![](https://raw.githubusercontent.com/mt2017-tartu-shared-task/nmt-system-D/master/reports/report4/business.png)
 
 
 ## No effect
