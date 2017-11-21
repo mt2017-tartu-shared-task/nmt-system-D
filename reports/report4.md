@@ -14,9 +14,8 @@ accurate dev-set (total 1000): **22.54 (22.61 before)**
 4. translation
 5. errors
 
-4.1. new translation
-
-5.1. new errors
+6. new translation
+7. new errors
 
 
 ## Changes
@@ -39,10 +38,10 @@ In many cases which we reviewed it had a positive effect. This change can possib
 5. Source sentence is two sentences in fact: splitting is bad. Second sentence is missing.
 "kohustuste" is translated twice as "obligations" and "duties". Second part of translation makes little sense. There are mistakes in word choice and forms.
 
-4.1. 
+6. 
 ID 56: ( 4 ) System operators do not have the right to disclose commercial information which has been notified to them in the performance of their duties .
 ID 57: Traders in energy supply define the content of business and confidential information by coordinating the regulator .
-5.1. Sentence was split. Now it is translated fully. No improvement on the first part, second was translated almost correctly.
+7. Sentence was split. Now it is translated fully. No improvement on the first part, second was translated almost correctly.
 
 Positive effect of our changes. No new mistakes. BLEU increased.
 
@@ -55,10 +54,10 @@ Positive effect of our changes. No new mistakes. BLEU increased.
 4. This part of our website will find information on how Parliament will organise its work through a system of different committees .
 5. Word dependency is wrong. Second sentence is missing. Article is missing. Wrong tense "will organise". "Different" instead of "specialized"
 
-4.1.
+6.
 ID 132: This part of our website will find information on how Parliament will organise its work through different committees .
 ID 133: The work of the European Parliament is therefore important because decisions on new European laws do jointly with Parliament and the Council of Ministers , which represents the Member States .
-5.1. Sentence was split. "System" is missing. Second part translated almost perfectly (BLEU 54)
+7. Sentence was split. "System" is missing. Second part translated almost perfectly (BLEU 54)
 
 Successful split. Otherwise everything is fine. BLEU increased.
 
@@ -90,8 +89,8 @@ Positive influence by our changes. Some improvement. Some new mistakes. BLEU dec
 4. The European Parliament's influence in the EU's business is increasing , and citizens will be able to choose directly from Parliament in 1979 .
 5. "Is increasing" and "will be" wrong tense. "For the first time" ("esmakordselt") is missing.
 
-4.1. ID 184: The European Parliament's impact on EU affairs will increase and citizens will be able to choose directly from Parliament for the first time in 1979 .
-5.1. "For the first time" emerged (because of root-splitting "esmakordselt" "kordselt" part received more attention)
+6. ID 184: The European Parliament's impact on EU affairs will increase and citizens will be able to choose directly from Parliament for the first time in 1979 .
+7. "For the first time" emerged (because of root-splitting "esmakordselt" "kordselt" part received more attention)
 
 Improvements related to our changes. No new mistakes. BLEU increased.
 
@@ -106,8 +105,8 @@ Improvements related to our changes. No new mistakes. BLEU increased.
 4. Transnational travel is easier , since the cost of money is no longer the cost and the effort .
 5. Idea of european countries is missing. Second part is wrong because of compound word "rahavahetuse" ("changing money").
 
-4.1. ID 202: Transnational travel is easier because there is no money for money exchange and trouble .
-5.1. "Exchange" emerged (because of splitting "raha_vahetuse")
+6. ID 202: Transnational travel is easier because there is no money for money exchange and trouble .
+7. "Exchange" emerged (because of splitting "raha_vahetuse")
 
 Improvements related to our changes. No new mistakes. BLEU increased.
 
@@ -122,8 +121,8 @@ Improvements related to our changes. No new mistakes. BLEU increased.
 4. Two major nuclear speeds are also emerging , with energy reaching 1 150 Tev , but a few seconds per second .
 5. "A few" != "fewer". "Collisions" became "seconds". Many word errors (compound words?).
 
-4.1. ID 732: There are also two core nuclear speeds , which will be fuelled by 1 150 Tev , but fewer clashes per second .
-5.1. "kokkupõrgete" was splitted => "clashes" emerged.
+6. ID 732: There are also two core nuclear speeds , which will be fuelled by 1 150 Tev , but fewer clashes per second .
+7. "kokkupõrgete" was splitted => "clashes" emerged.
 
 Improvements related to our changes. No new mistakes. BLEU the same.
 
@@ -136,8 +135,8 @@ Improvements related to our changes. No new mistakes. BLEU the same.
 4. Knowing before the impact on particle energy , they compare the energy of particles after impact .
 5. Active voice instead of passive. "Impact" != "collisions". Wrong preposition "on".
 
-4.1. ID 747: Given the impact of particle energy before collision , they will compare the particle energy generated after collision .
-5.1. "kokkupõrgete" was splitted. "Impact" became "collisions" which is right.
+6. ID 747: Given the impact of particle energy before collision , they will compare the particle energy generated after collision .
+7. "kokkupõrgete" was splitted. "Impact" became "collisions" which is right.
 
 Improvements related to our changes. No new mistakes. BLEU increased.
 
@@ -150,8 +149,8 @@ Improvements related to our changes. No new mistakes. BLEU increased.
 4. For each part , an antibody is an antique which includes the same mass , but the counterpart .
 5. Lexical mistakes (physical terms)
 
-4.1. ID 782: For each part of the component , an antique element includes the same weight as the same mass but opposite the charge .
-5.1. "vastaslaengut" split - "opposite charge" emerged. 
+6. ID 782: For each part of the component , an antique element includes the same weight as the same mass but opposite the charge .
+7. "vastaslaengut" split - "opposite charge" emerged. 
 
 Some improvements. No new mistakes. BLEU increased.
 
@@ -164,8 +163,8 @@ Some improvements. No new mistakes. BLEU increased.
 4. The IBM business and flexibility service will help to ensure that business operations are uninterrupted and assist in regulatory compliance , availability of an improved system , data protection and integration with IT operations .
 5. Wrong tense "will help". "Flexibility" is the wrong word. Word dependency of "improved" is wrong. "Risk management strategies" missing.
 
-4.1. ID 851: The IBM business continuity and flexibility service will help ensure the continuity of business operations and assist regulatory compliance , the availability of improved system , data protection and the risk management strategies of IT operations .
-5.1. "riskihaldusstrateegiatega" split - "risk management strategies" emerged. "business continuity" emerged. Now sentence seems to be translated correctly.
+6. ID 851: The IBM business continuity and flexibility service will help ensure the continuity of business operations and assist regulatory compliance , the availability of improved system , data protection and the risk management strategies of IT operations .
+7. "riskihaldusstrateegiatega" split - "risk management strategies" emerged. "business continuity" emerged. Now sentence seems to be translated correctly.
 
 Improvements related to our changes. No new mistakes. BLEU increased.
 
@@ -183,8 +182,8 @@ Improvements related to our changes. No new mistakes. BLEU increased.
 5. "Unit" is singular, the second part of compound word "pädevusvaldkondade" is missing (second case already).
 All the other mistakes are rephrasing.
 
-4.1. The leaders of the entities must also play an active role in the development of thematic areas and content .
-5.1. Despite the splitting there was no attention payed to "pädevus" part.
+6. The leaders of the entities must also play an active role in the development of thematic areas and content .
+7. Despite the splitting there was no attention payed to "pädevus" part.
 
 Neutral effect of out changes. No improvement. No new mistakes. BLEU increased.
 
@@ -200,8 +199,8 @@ Neutral effect of out changes. No improvement. No new mistakes. BLEU increased.
 4. There is currently no PH-function on the investment department .
 5. Abbreviation is wrong (PH instead of HRM), preposition "on" is wrong, all other innaccuracies are due to refrasing
 
-4.1. There is currently no investment unit in PH .
-5.1. "function" became missing for no reason. "department" became "unit".
+6. There is currently no investment unit in PH .
+7. "function" became missing for no reason. "department" became "unit".
 
 Nothing related to our changes. No improvement. No new mistakes. BLEU decreased.
 
@@ -215,8 +214,8 @@ Nothing related to our changes. No improvement. No new mistakes. BLEU decreased.
 5. Abbreviations are completely wrong (can words in braces be abbreviated instead of direct translation?)
 "Project" is duplicated unnecessarily. "Manual" is close in meaning to "handbook". Rephrasing presented.
 
-4.1. The PRK will soon be ready and PKJ ( manual of project implementation ) .
-5.1. Word order became wrong.  
+6. The PRK will soon be ready and PKJ ( manual of project implementation ) .
+7. Word order became wrong.  
 
 Nothing related to our changes. No improvement. Some new mistakes. BLEU decreased.
 
@@ -230,8 +229,8 @@ Nothing related to our changes. No improvement. Some new mistakes. BLEU decrease
 5. The sentence has a complex structure and this is the main problem here. Abbreviations have gone wrong. 
 "HR" was translated as "staff", this is quiet interesting. "Would" is in incorrect form.
 
-4.1. The plan would be a presumption that the staff manager / coordinator will be able to start full-time work at the beginning of December 2003 .
-5.1. "presumption" is a better word. "developong the HRM" is missing. "Will be able" was added and better conveys the meaning.
+6. The plan would be a presumption that the staff manager / coordinator will be able to start full-time work at the beginning of December 2003 .
+7. "presumption" is a better word. "developong the HRM" is missing. "Will be able" was added and better conveys the meaning.
 
 Nothing related to our changes. Some improvement. Some new mistakes. BLEU increased.
 
@@ -245,8 +244,8 @@ Nothing related to our changes. Some improvement. Some new mistakes. BLEU increa
 5. Casing mistake in "programme", "Latvia" is completely missing, "Lisbon strategy" translated twice. "Features of actions" instead of "lines of actions.
 "meetmete" and "tegevuste" both translated as "actions", "but" instead of "as well as".
 
-4.1. ID 68: The programme reflects the most important challenges facing Latvia in achieving the objectives of the Lisbon Strategy and identifies the main features of actions and actions to tackle these challenges , as well as indicators for achieving these objectives .
-5.1. Latvia emerged! "As well" is better than "but".
+6. ID 68: The programme reflects the most important challenges facing Latvia in achieving the objectives of the Lisbon Strategy and identifies the main features of actions and actions to tackle these challenges , as well as indicators for achieving these objectives .
+7. Latvia emerged! "As well" is better than "but".
 
 It can be effect of our changes, but we are not sure. Overall improvement. No new mistakes. BLEU increased.
 
@@ -260,8 +259,8 @@ It can be effect of our changes, but we are not sure. Overall improvement. No ne
 5. "Consultation" is singular and with article. "By" instead of "with". "the" is missing before "Latvian parliament" and redundant before "social partners".
 Interesting mistake "Sejm" (correct, but initially is not translated) 
 
-4.1. ID 71: The consultation was held with the Sejm ( Latvian Parliament ) and the social partners .
-5.1. "With" instead of "by" is better. 
+6. ID 71: The consultation was held with the Sejm ( Latvian Parliament ) and the social partners .
+7. "With" instead of "by" is better. 
 
 No improvement related to our changes. No new mistakes. BLEU increased.
 
@@ -275,8 +274,8 @@ No improvement related to our changes. No new mistakes. BLEU increased.
 5. Debt is measured in tonnes (emerged from nowhere), "puclic" instead of "central government", "amounted" rephrased as "reached". 
 Abbreviation GDP is correct.
 
-4.1. ID 78: 	On 31 December 2004 , public debt amounted to 975 million latin or 13,3% of GDP 
-5.1. "latin" is clearly wrong (but better than "tonnes").
+6. ID 78: 	On 31 December 2004 , public debt amounted to 975 million latin or 13,3% of GDP 
+7. "latin" is clearly wrong (but better than "tonnes").
 
 No improvement related to our changes. No new mistakes. BLEU increased.
 
@@ -289,8 +288,8 @@ No improvement related to our changes. No new mistakes. BLEU increased.
 4. It should be noted , however , that an ageing population will test the health system in a new way .
 5. Sentence is completely rephrased but correct. Only translation of compound word "tervishoiusüsteemi" lacks "care" part.
 
-4.1. It should be noted , however , that the ageing population will test the health system in a new way .
-5.1. "care" is still absent. Translation is approximately the same.
+6. It should be noted , however , that the ageing population will test the health system in a new way .
+7. "care" is still absent. Translation is approximately the same.
 
 No improvement. No new mistakes. BLEU increased.
 
@@ -304,8 +303,8 @@ No improvement. No new mistakes. BLEU increased.
 5. "But" instead of "as well". "Coordination" is missing. Preposition "on" instead of "at". 
 Article missing. Rephrasing.
 
-4.1. ID 110: Latvia must determine the deadline for transposition of the internal market rules , but also ensure that the supervisory directives are coordinated at national level .
-5.1. "political" part is missing.
+6. ID 110: Latvia must determine the deadline for transposition of the internal market rules , but also ensure that the supervisory directives are coordinated at national level .
+7. "political" part is missing.
 
 Nothing related to out changes. Part of sentence is missing. BLEU decreased.
 
@@ -318,8 +317,8 @@ Nothing related to out changes. Part of sentence is missing. BLEU decreased.
 4. As far as the current transposition of EU legislation is concerned , an effective database which would provide the opportunity to monitor the transposition process within a number of reference points , as well as in addition to other circumstances , is slowing down the transposition process and creating an EU internal market .
 5. Very long and complicated sentence. Missing words, problems with word dependencies.
 
-4.1. ID 114: At present , there is no effective comprehensive database for monitoring transposition of EU legislation , providing the possibility of monitoring the transposition process of directives over a number of time limits , and , in addition to other circumstances , the transposition process of directives is slowing down and the establishment of the EU internal market standards is impeded .
-5.1. New translation seems better, but it is not clear why. 
+6. ID 114: At present , there is no effective comprehensive database for monitoring transposition of EU legislation , providing the possibility of monitoring the transposition process of directives over a number of time limits , and , in addition to other circumstances , the transposition process of directives is slowing down and the establishment of the EU internal market standards is impeded .
+7. New translation seems better, but it is not clear why. 
 
 Some words changed to better ones. BLEU increased.
 
@@ -332,8 +331,8 @@ Some words changed to better ones. BLEU increased.
 4. As of 1 July 2004 , a qualified free consumer status threshold was set at 0,0 GWh .
 5. "Eligible" is missing, "the threshold for eligibility of a legal entity" part is also missing (no attention).
 
-4.1. ID 122: As at 1 July 2004 , a qualified consumer status threshold for legal persons was set at 0,0 GWh .
-5.1. "Legal persons" emegred, but it is not clear, why.
+6. ID 122: As at 1 July 2004 , a qualified consumer status threshold for legal persons was set at 0,0 GWh .
+7. "Legal persons" emegred, but it is not clear, why.
 
 Some improvements. No new mistakes. BLEU increased.
 
@@ -346,8 +345,8 @@ Some improvements. No new mistakes. BLEU increased.
 4. It is a little more than a third of Parliament's members .
 5. "At present" and "women" are missing. "EP" abbreviation is "parliament" without "e[uropean]". "It is" is redundant.
 
-4.1. ID 144: Today , a slightly more than one third of MEPs are women .
-5.1. "Women" emerged which is good. Abberviation remained.
+6. ID 144: Today , a slightly more than one third of MEPs are women .
+7. "Women" emerged which is good. Abberviation remained.
 
 Sentence became significantly better (BLEU 48), but it is not clear why. BLEU increased.
 
@@ -360,8 +359,8 @@ Sentence became significantly better (BLEU 48), but it is not clear why. BLEU in
 4. Since the power of Members of the European Parliament is increasing , they will have an impact on all citizens' everyday lives : Environment , consumer protection , transport and education , culture , health , etc .
 5. Wrong tense "will have an impact" instead of "influence". Wrong casing in "environment". Article is missing.
 
-4.1. ID 151: Since the power of Members of the European Parliament is increasing , they influence all the areas of everyday life of their citizens : The environment , consumer protection , transport and also education , culture , health , etc .
-5.1. Tense changed to present which is good, "influence" as in the human translation instead of "impact"
+6. ID 151: Since the power of Members of the European Parliament is increasing , they influence all the areas of everyday life of their citizens : The environment , consumer protection , transport and also education , culture , health , etc .
+7. Tense changed to present which is good, "influence" as in the human translation instead of "impact"
 
 No improvement related to our changes. BLEU increased.
 
@@ -374,8 +373,8 @@ No improvement related to our changes. BLEU increased.
 4. Furthermore , the provisions of the Treaty allow every European citizen to monitor the work of the Parliament , ask questions and receive answers in its language .
 5. Rephrasing everywhere. "Its" instead of "their own".
 
-4.1. ID 162: 	Furthermore , the provisions of the Treaty allow every European citizen to monitor Parliament's work , ask questions and receive answers in its language .
-5.1. Translation is a bit more similar to the human one. Otherwise the same.
+6. ID 162: 	Furthermore , the provisions of the Treaty allow every European citizen to monitor Parliament's work , ask questions and receive answers in its language .
+7. Translation is a bit more similar to the human one. Otherwise the same.
 
 No improvement. No new mistakes. BLEU increased.
 
@@ -388,8 +387,8 @@ No improvement. No new mistakes. BLEU increased.
 4. Six founding countries are Belgium , the Netherlands , Italy , Luxembourg , France and Germany .
 5. Human translation shuffled countries. Otherwise everything is OK.
 
-4.1. Six founding countries are Belgium , the Netherlands , Italy , Luxembourg , France and Germany .
-5.1. ID 172: Nothing changed.
+6. Six founding countries are Belgium , the Netherlands , Italy , Luxembourg , France and Germany .
+7. ID 172: Nothing changed.
 
 
 ### 19
@@ -400,8 +399,8 @@ No improvement. No new mistakes. BLEU increased.
 4. In the 1960s , & quot ; youth culture & quot ; is emerging , the Beatles and other bands attract enormous teenagers everywhere , encouraging the cultural revolution and the widening gap between generations .
 5. "Crowds" and "wherever they appear" are absent. Rephrasing.
 
-4.1. In the 1960s , & quot ; youth culture & quot ; , the Beatles and other bands attract huge teenagers everywhere , encouraging the revolution of cultural revolution and widening the gap between generations .
-5.1. "Revolution" doubled, which is bad.
+6. In the 1960s , & quot ; youth culture & quot ; , the Beatles and other bands attract huge teenagers everywhere , encouraging the revolution of cultural revolution and widening the gap between generations .
+7. "Revolution" doubled, which is bad.
 
 No improvement. Doubling mistake. BLEU increased.
 
@@ -415,8 +414,8 @@ No improvement. Doubling mistake. BLEU increased.
 5. Wrong tense "are falling". "Portugal" is missing. Word dependencies between first and second part of the sentence are incorrect.
 "In the area" is wrong by meaning.
 
-4.1. ID 182: The last European right-wing dictatorships , if in 1974 , the Salazar regime will fall in Portugal , and in 1975 , General Franco dies in Spain .
-5.1. Structure of sentence is worse. Future tense.
+6. ID 182: The last European right-wing dictatorships , if in 1974 , the Salazar regime will fall in Portugal , and in 1975 , General Franco dies in Spain .
+7. Structure of sentence is worse. Future tense.
 
 No improvement. Some new mistakes (not related to our changes). BLEU increased.
 
@@ -429,8 +428,8 @@ No improvement. Some new mistakes (not related to our changes). BLEU increased.
 4. The collapse of Communism throughout Central and Eastern Europe strengthens the neighbourhoods of Europeans .
 5. Casing problems. "Neibourhoods" is used with the wrong meaning.
 
-4.1. ID 190: The collapse of Communism across Central and Eastern Europe strengthens the neighbourhood of Europeans .
-5.1. Almost nothing changed. "Across" was the right word.
+6. ID 190: The collapse of Communism across Central and Eastern Europe strengthens the neighbourhood of Europeans .
+7. Almost nothing changed. "Across" was the right word.
 
 No improvement. No new mistakes. BLEU increased.
 
@@ -443,8 +442,8 @@ No improvement. No new mistakes. BLEU increased.
 4. Citizens are increasingly concerned about protecting the environment , while looking for new opportunities for European security and defence .
 5. Human translation misses "increasingly" ("üha"). MT is rephrased but otherwise absolutely correct.
 
-4.1. ID 193: Citizens are increasingly concerned about protecting the environment , while looking for new opportunities for European security and defence .
-5.1. Nothing changed.
+6. ID 193: Citizens are increasingly concerned about protecting the environment , while looking for new opportunities for European security and defence .
+7. Nothing changed.
 
 
 ### 25
@@ -455,8 +454,8 @@ No improvement. No new mistakes. BLEU increased.
 4. The EU protects consumers against defective and unquality products , whether goods are purchased from home or from another country .
 5. "Rules" is missing. "Unquality" is the wrong word. Wrong preposition "from home". Can't replace "locally" with "home" here.
 
-4.1. ID 205: The EU protects consumers from defective and unquality products regardless of whether goods are purchased from a home or another country .
-5.1. No major changes
+6. ID 205: The EU protects consumers from defective and unquality products regardless of whether goods are purchased from a home or another country .
+7. No major changes
 
 No improvements. No new mistakes. BLEU decreased.
 
@@ -470,8 +469,8 @@ No improvements. No new mistakes. BLEU decreased.
 5. Strange word "neutrtoring" - BPE problems. "Protons" are singular. System suffers the lack of physical lexicon. 
 Wrong tense "formed".
 
-4.1. ID 762: In the '60s , scientists realized that the protons and neutralizing , which formed a nuclear nucleus , were made even more primitive than the quarks .
-5.1. "Quarks" named right. "Neutralizing" instead of "neutrtoring" - attempt to translate "neutrons".
+6. ID 762: In the '60s , scientists realized that the protons and neutralizing , which formed a nuclear nucleus , were made even more primitive than the quarks .
+7. "Quarks" named right. "Neutralizing" instead of "neutrtoring" - attempt to translate "neutrons".
 
 Some improvements. No new mistakes. BLEU increased.
 
@@ -484,8 +483,8 @@ Some improvements. No new mistakes. BLEU increased.
 4. They say they're in prison .
 5. "Quarks" are missing. "Confined" != "in prison" here.
 
-4.1. ID 766: The quarks are saying they're in jail .
-5.1. "Quarks" emerged. 
+6. ID 766: The quarks are saying they're in jail .
+7. "Quarks" emerged. 
 
 Some improvements. No new mistakes. BLEU increased.
 
@@ -498,8 +497,8 @@ Some improvements. No new mistakes. BLEU increased.
 4. This is the reason why physics want to investigate it using the iion speeds created by LHC .
 5. "Physics" != "physicists". "Iion" - wrong word. "Beams" != "speeds" 
 
-4.1. ID 776: This is why physicians want to investigate the ion beam generated by LHC .
-5.1. "Physics" became "physicians" which is bad. "ioonikiirte" was split - "ion beam" emerged, which is good.
+6. ID 776: This is why physicians want to investigate the ion beam generated by LHC .
+7. "Physics" became "physicians" which is bad. "ioonikiirte" was split - "ion beam" emerged, which is good.
 
 Some improvements. Some new mistakes. BLEU increased.
 
@@ -512,8 +511,8 @@ Some improvements. Some new mistakes. BLEU increased.
 4. The fact that business becomes more complex and internationally linked , the risks of interruptions and costs beyond IT go beyond the business process .
 5. "Internationally" != "interconnected". Word dependencies problem("risk and costs" -> "risk of costs"). "Beyond" twice instead of "every aspect".
 
-4.1. ID 860: As businesses become more complex and internationally linked , the risks of interruptions and the costs of the ITD go beyond the business process .
-5.1. "As business become" is better. Abberviation was broken. Otherwise the same.
+6. ID 860: As businesses become more complex and internationally linked , the risks of interruptions and the costs of the ITD go beyond the business process .
+7. "As business become" is better. Abberviation was broken. Otherwise the same.
 
 No improvements. No new mistakes. No BLEU change.
 
@@ -526,8 +525,8 @@ No improvements. No new mistakes. No BLEU change.
 4. We usually carry out an evaluation and create a detailed , priority order in the road map and technical architecture .
 5. "In" is redundant. Rephrasing.
 
-4.1. ID 883: We usually carry out an evaluation and a detailed , prioritisation of a roadmap and technical architecture .
-5.1. Almost nothing changed.
+6. ID 883: We usually carry out an evaluation and a detailed , prioritisation of a roadmap and technical architecture .
+7. Almost nothing changed.
 
 No improvement. No new mistakes. BLEU increased.
 
@@ -540,8 +539,8 @@ No improvement. No new mistakes. BLEU increased.
 4. Extend mutual cooperation and cooperation throughout the value network .
 5. "Cooperation" twice, it is not pretty but grammatically correct.
 
-4.1. ID 895: Extend mutual cooperation and cooperation across the value network .
-5.1. "Across" instead of "throughout" is slightly better.
+6. ID 895: Extend mutual cooperation and cooperation across the value network .
+7. "Across" instead of "throughout" is slightly better.
 
 No improvements. No new mistakes. BLEU increased.
 
@@ -554,8 +553,8 @@ No improvements. No new mistakes. BLEU increased.
 4. Information on the management , incremental
 5. Swap word dependencies, "incremental" != "multiplying exponentially". Ungrammatical.
 
-4.1. ID 902: The information management , which is growing gradually
-5.1. Better grammar, more sense.
+6. ID 902: The information management , which is growing gradually
+7. Better grammar, more sense.
 
 Some improvements. No new mistakes. BLEU increased.
 
@@ -569,8 +568,8 @@ Some improvements. No new mistakes. BLEU increased.
 5. "Infrastructure" is missing. "Located between" != "in the context". Word dependencies problem. 
 "Start-up" != "execute".
 
-4.1. ID 905: In the setting up of business processes , it is necessary to provide infrastructure with an infrastructure .
-5.1. Wasn't fixed at all.
+6. ID 905: In the setting up of business processes , it is necessary to provide infrastructure with an infrastructure .
+7. Wasn't fixed at all.
 
 No improvements. No new mistakes. BLEU increased.
 
@@ -583,8 +582,8 @@ No improvements. No new mistakes. BLEU increased.
 4. We can help customers achieve their goals faster and reduced , since we can implement our vast best practice , methodologies , tools and proven architectures , which we have gathered over the years with customers across the world from different business experience .
 5. "Risks" is missing. Word dependencies problem in the end of the sentence. Grammatically incorrect. 
 
-4.1. ID 910: We can help customers achieve their goals faster and reduced at risk because we can implement our huge best practice , methodologies , tools and proven architectures that we have gathered over the years from different experiences of cooperation with customers worldwide .
-5.1. "Risk" emerged. End of sentence looks more like human translation.
+6. ID 910: We can help customers achieve their goals faster and reduced at risk because we can implement our huge best practice , methodologies , tools and proven architectures that we have gathered over the years from different experiences of cooperation with customers worldwide .
+7. "Risk" emerged. End of sentence looks more like human translation.
 
 Some improvements. No new mistakes. BLEU increased.
 
@@ -597,8 +596,8 @@ Some improvements. No new mistakes. BLEU increased.
 4. Information infrastructure provided at the request of IBM
 5. "On demand" != "at the request". "Services" is missimg. Word dependencies problem.
 
-4.1. ID 921: Information Infrastructure for IBM on request
-5.1. Almost nothing changed.
+6. ID 921: Information Infrastructure for IBM on request
+7. Almost nothing changed.
 
 No improvements. No new mistakes. BLEU increased.
 
@@ -611,8 +610,8 @@ No improvements. No new mistakes. BLEU increased.
 4. Set up a rapid infrastructure allowing the integration of business processes
 5. "Agile" != "rapid" here. Rephrasing.
 
-4.1. ID 924: Create a fast infrastructure that allows the integration of business processes
-5.1. Seems more like human translation.
+6. ID 924: Create a fast infrastructure that allows the integration of business processes
+7. Seems more like human translation.
 
 No improvement. No new mistakes. BLEU increased.
 
