@@ -13,7 +13,6 @@ accurate dev-set (total 1000): **22.54 (22.61 before)**
 3. target
 4. translation
 5. errors
-
 6. new translation
 7. new errors
 
@@ -38,8 +37,7 @@ In many cases which we reviewed it had a positive effect. This change can possib
 5. Source sentence is two sentences in fact: splitting is bad. Second sentence is missing.
 "kohustuste" is translated twice as "obligations" and "duties". Second part of translation makes little sense. There are mistakes in word choice and forms.
 
-6. 
-ID 56: ( 4 ) System operators do not have the right to disclose commercial information which has been notified to them in the performance of their duties .
+6. ID 56: ( 4 ) System operators do not have the right to disclose commercial information which has been notified to them in the performance of their duties .
 ID 57: Traders in energy supply define the content of business and confidential information by coordinating the regulator .
 7. Sentence was split. Now it is translated fully. No improvement on the first part, second was translated almost correctly.
 
@@ -54,8 +52,7 @@ Positive effect of our changes. No new mistakes. BLEU increased.
 4. This part of our website will find information on how Parliament will organise its work through a system of different committees .
 5. Word dependency is wrong. Second sentence is missing. Article is missing. Wrong tense "will organise". "Different" instead of "specialized"
 
-6.
-ID 132: This part of our website will find information on how Parliament will organise its work through different committees .
+6. ID 132: This part of our website will find information on how Parliament will organise its work through different committees .
 ID 133: The work of the European Parliament is therefore important because decisions on new European laws do jointly with Parliament and the Council of Ministers , which represents the Member States .
 7. Sentence was split. "System" is missing. Second part translated almost perfectly (BLEU 54)
 
@@ -75,8 +72,8 @@ Successful split. Otherwise everything is fine. BLEU increased.
 5. Word "working" is missing because first part of compound word "tööprotsesse" is missing.
 Article "the" before "pressure" is missing. Word order is strange, but not completely wrong.
 
-4.1 Pressure to deal effectively and correctly with both work processes and personnel issues .
-5.1 "deal" is better than "address". Predicate went missing, "processes" became "work processes", which is better.
+6. Pressure to deal effectively and correctly with both work processes and personnel issues .
+7. "deal" is better than "address". Predicate went missing, "processes" became "work processes", which is better.
 
 Positive influence by our changes. Some improvement. Some new mistakes. BLEU decreased.
 
