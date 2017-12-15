@@ -26,7 +26,7 @@ More details: [link](https://github.com/mt2017-tartu-shared-task/nmt-system-D/bl
 ## Baseline system manual evaluation
 
 - We manually analyzed 40 baseline translations. 
-- Our main observations were that the system had problems translating Estonian compound words - some of the parts were usually missing, and that future tense often emerged in translation instead of present.
+- Our main observations were that the system had problems translating Estonian compound words - some of the parts were usually missing, and that future tense often emerged in translation instead of present. We also noticed that initial sentence splitting was often wrong and caused errors.
 - Take a look at our the motivating examples produced by baseline system:
 
 1. Source: Riikidevaheline reisimine on lihtsam, kuna enam pole rahavahetuse kulu ja vaeva.
