@@ -4,7 +4,7 @@ This repository is the result of our participation in the shared task.
 
 We went through the process of building, analyzing, and improving a neural machine translation system.
 
-Poster: [link]() // fill later
+Poster: [link](https://github.com/mt2017-tartu-shared-task/nmt-system-D/blob/master/poster/mt_poster_D_A1.pdf)
 
 The shared task was for Estonian-English language pair. 
 
