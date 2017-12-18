@@ -54,7 +54,7 @@ More details: [link](https://github.com/mt2017-tartu-shared-task/nmt-system-D/bl
 
 - As a result you can see that the word "exchange", which was not there before, appeared in the sentence, because we split "raha_vahetuse" ("money exchange").
 
-Do not forget to check our poster: [__POSTER_LINK__]()
+Do not forget to check our poster: [link](https://github.com/mt2017-tartu-shared-task/nmt-system-D/blob/master/poster/mt_poster_D_A1.pdf)
 
 ## What we also tried or wanted to try
 
